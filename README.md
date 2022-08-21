@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Project Details
+
+This is  React Application for Recruitment App, here  once we Signin out having two different Portals one is for Recruitor amd another one is for Applicant, once the respecive persons signed up they can view the  List of Jobs and , for Apply button is disabled for the recruitor Portal that only visible for the Applicant
+
 ## Available Scripts
 
 In the project directory, you can run:
