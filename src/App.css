@@ -1,38 +1,96 @@
 .App {
-  text-align: center;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-1 > header.top-bar {
+  height: 65px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page1-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: calc(100% - 65px);
+  background: url("./images/bg.jpg") no-repeat -100px -400px;
+}
+.page1-content > h1 {
+  color: #d3006b;
+  text-align: center;
+}
+.page-1 {
+  height: 100vh;
+}
+.form-group {
+  margin: 1.5rem;
+  /* padding: 1rem; */
+}
+.css-319lph-ValueContainer {
+  padding: 0.75rem !important;
+}
+.signup-wrapper h1 {
+  text-align: center;
+}
+.signup-wrapper {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.signup-wrapper > div {
+  flex-basis: 50%;
+  margin: 16px;
+  box-shadow: -1px -1px 20px 0px #999;
 }
 
-.App-link {
-  color: #61dafb;
+.field-wrap {
+  display: flex;
+  gap:25px;
+}
+.field-wrap > div {
+  flex-basis: 100%;
+}
+.star-wrap > span > svg {
+  color:orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-wrapper .left > h2 ~ div {
+  display: flex;
+  gap: 10px;
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  width:700px;
+  gap:2rem;
+  position: relative;
+}
+.content-wrapper > .right {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+.more-icon > svg {
+  font-size:48px;
+  color:#d3006b;
+  cursor:pointer;
+}
+span.more-icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.jd {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.skills > p > span {
+  border: 1px solid #06c;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 7px;
+}
+.applicant-applications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  /* column-gap: 1rem; */
 }
