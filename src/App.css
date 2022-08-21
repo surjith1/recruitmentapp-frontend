@@ -62,6 +62,8 @@
   width:700px;
   gap:2rem;
   position: relative;
+  box-shadow: 0px 5px 15px 2px #ccc;
+  padding:10px;
 }
 .content-wrapper > .right {
   position: absolute;

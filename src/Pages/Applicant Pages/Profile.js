@@ -14,7 +14,7 @@ const Profile = () => {
   });
   const [applicantData, setApplicantData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/api/users/applicant`)
+    fetch(`https://recruiter-app.herokuapp.com/api/users/applicant`)
       .then((response) => response.json())
       .then((actualData) => {
         setApplicantData(actualData);

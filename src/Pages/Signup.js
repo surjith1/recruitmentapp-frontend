@@ -33,14 +33,15 @@ const Signup = () => {
   const handlerecruiterSubmit = async (e) => {
     e.preventDefault();
 
-    const url = "http://localhost:5000/api/users/recruiter";
+    const url = "https://recruiter-app.herokuapp.com/api/users/recruiter";
     const recruit = await axios.post(url, recruiterdata);
     navigate("/recruiter-main");
   };
 
   const handleApplicantSubmit = async (e) => {
     e.preventDefault();
-    const applicanturl = "http://localhost:5000/api/users/applicant";
+    const applicanturl =
+      "https://recruiter-app.herokuapp.com/api/users/applicant";
     const resapplicant = await axios.post(applicanturl, applicantdata);
     navigate("/applicant-main");
   };

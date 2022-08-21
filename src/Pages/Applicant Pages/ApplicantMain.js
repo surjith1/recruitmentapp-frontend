@@ -12,7 +12,7 @@ const ApplicantMain = () => {
   const [dbData, setDbData] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/job-application`)
+    fetch(`https://recruiter-app.herokuapp.com/api/job-application`)
       .then((response) => response.json())
       .then((actualData) => {
         setDbData(actualData);
